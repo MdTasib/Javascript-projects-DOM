@@ -102,3 +102,39 @@ const friends = ["Rafi", "Rakib", "Tawrat", "Tasib"];
 // const findBigFriend = bigFriend("hello");
 const findBigFriend = bigFriend(friends);
 console.log(findBigFriend); */
+
+/* // Have fun with sort and reverse a javascript array
+
+const numbers = [1, 2, 4, 3, 6, 5];
+console.log(numbers.sort());
+
+const numbers2 = [11, 1, 2, 3, 22, -1];
+console.log(numbers2.sort());
+
+const sortFunction = numbers2.sort(function (a, b) {
+	return a - b;
+});
+
+console.log(sortFunction);
+
+const letter = ["b", "c", "a"];
+console.log(letter.sort());
+
+// reverse
+const str = ["a", "b", "c"];
+console.log(str);
+console.log(str.reverse()); */
+
+// Unlimited parameters to a function using arguments
+/* function sum() {
+	let sum = 0;
+
+	for (const number of arguments) {
+		sum += number;
+	}
+
+	return sum;
+}
+
+const sumNumber = sum(1, 2, 3, 4, 5);
+console.log(sumNumber); */
