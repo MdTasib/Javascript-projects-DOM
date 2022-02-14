@@ -80,3 +80,25 @@ const brothers = ["Rafi", "Rakib", "Tasib"];
 const joinBrother = brothers.join(",");
 console.log(joinBrother);
  */
+
+/* // Check an Array using isArray
+function bigFriend(friends) {
+	if (Array.isArray(friends) == false) {
+		return "Is not an array";
+	}
+
+	let bigFriend = friends[0];
+
+	for (const friend of friends) {
+		if (friend.length > bigFriend.length) {
+			bigFriend = friend;
+		}
+	}
+
+	return bigFriend;
+}
+
+const friends = ["Rafi", "Rakib", "Tawrat", "Tasib"];
+// const findBigFriend = bigFriend("hello");
+const findBigFriend = bigFriend(friends);
+console.log(findBigFriend); */
