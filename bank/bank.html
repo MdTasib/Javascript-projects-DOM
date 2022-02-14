@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bank</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<h1 class="text-center text-5xl py-5">
+			Islami <span class="text-green-500">Bank</span> !!!
+		</h1>
+
+		<section class="container mx-auto px-4">
+			<div class="grid grid-cols-3 gap-4 text-white text-center">
+				<div class="bg-green-400 p-8 rounded">
+					<p class="text-xl">DEPOSIT</p>
+					<p class="text-4xl">$<span id="deposit-amount">00</span></p>
+				</div>
+				<div class="bg-blue-400 p-8 rounded">
+					<p class="text-xl">WITHDRAW</p>
+					<p class="text-4xl">$<span id="withdraw-amount">00</span></p>
+				</div>
+				<div class="bg-purple-400 p-8 rounded">
+					<p class="text-xl">TOTAL BALANCE</p>
+					<p class="text-4xl">$<span id="total-amount">1200</span></p>
+				</div>
+			</div>
+		</section>
+
+		<section class="container mx-auto px-4 my-8">
+			<div class="grid grid-cols-2 gap-4">
+				<div class="bg-green-400 p-4 rounded text-white">
+					<h3 class="text-2xl">DEPOSIT YOUR AMOUNT</h3>
+					<div>
+						<input
+							class="border border-gray-400 w-3/4 block rounded my-2 p-1 text-black"
+							type="text"
+							id="deposit-input"
+							placeholder="$ Amount you want to deposit"
+						/>
+						<button id="deposit-btn" class="bg-green-700 px-4 py-2 rounded">
+							DEPOSIT
+						</button>
+					</div>
+				</div>
+				<div class="bg-blue-400 p-4 rounded text-white">
+					<h3 class="text-2xl">WITHDRAW YOUR AMOUNT</h3>
+					<div>
+						<input
+							class="border border-gray-400 w-3/4 block rounded my-2 p-1 text-black"
+							type="text"
+							id="withdraw-input"
+							placeholder="$ Amount you want to withdraw"
+						/>
+						<button id="withdraw-btn" class="bg-blue-700 px-4 py-2 rounded">
+							WITHDRAW
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/bank.js"></script>
+	</body>
+</html>
