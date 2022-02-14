@@ -50,3 +50,33 @@ for (const item of items) {
 	}
 }
 console.log(output); */
+
+/* // How to split, slice, substr, concat, join
+const name = "Mohammad Ohidul Alam Tasib";
+
+// split
+const splitName = name.split(" ");
+console.log("split : ", splitName);
+
+// slice
+const sliceName = name.slice(9, 16);
+console.log("slice : ", sliceName);
+
+// substr
+const substrName = name.substr(16);
+console.log("substr : ", substrName);
+
+// concat
+const firstName = "Ohidul";
+const lastName = "Alam";
+const space = " ";
+// const fullName = firstName.concat(lastName);
+const fullName = firstName.concat(space).concat(lastName);
+console.log("concat : ", fullName);
+
+// join
+const brothers = ["Rafi", "Rakib", "Tasib"];
+// const joinBrother = brothers.join(" ");
+const joinBrother = brothers.join(",");
+console.log(joinBrother);
+ */
