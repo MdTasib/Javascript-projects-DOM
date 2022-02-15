@@ -12,6 +12,26 @@ function calculateInput(product, price, isIncres) {
 
 	const productTotal = document.getElementById(product + "-total");
 	productTotal.innerText = productInputNumber * price;
+
+	getTotal();
+}
+
+function getInputNumber(product) {
+	const productInput = document.getElementById(product + "-number");
+	const productNumber = parseInt(productInput.value);
+	return productNumber;
+}
+
+function getTotal() {
+	const phonePrice = getInputNumber("phone") * 1210;
+	const casePrice = getInputNumber("case") * 59;
+	const productTotal = phonePrice + casePrice;
+	const taxAmount = productTotal / 10;
+	const total = productTotal + taxAmount;
+
+	document.getElementById("sub-total").innerText = productTotal;
+	document.getElementById("tax-amount").innerText = taxAmount;
+	document.getElementById("total-price").innerText = total;
 }
 
 document.getElementById("phone-plus").addEventListener("click", function () {
